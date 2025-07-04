@@ -1,6 +1,6 @@
 # 🧠 LangGraph Multi-Agent Workflow: Supervisor, Researcher, and Coder
 
-This project demonstrates a **multi-agent orchestration system** using [LangGraph](https://github.com/langchain-ai/langgraph), showcasing a workflow where a **Supervisor Agent** dynamically delegates tasks to specialized agents — a **Researcher Agent** and a **Coder Agent** — to collaboratively solve complex problems.
+This project demonstrates a multi-agent orchestration system using [LangGraph](https://github.com/langchain-ai/langgraph). It showcases a workflow where a Supervisor Agent dynamically delegates tasks to specialized agents—a **Researcher Agent** and a **Coder Agent**—to collaboratively solve complex problems.
 
 ## 🧩 Project Overview
 
@@ -20,7 +20,7 @@ To simulate a collaborative AI system where tasks are routed and processed by di
   - Or terminate if the task is complete.
 
 ### 3. **Researcher Agent**
-- Gathers information or explanations relevant to the user’s question.
+- Gather information or explanations relevant to the user’s question.
 - May query a language model with a research-centric prompt.
 - Sends the result back to the supervisor or ends the workflow.
 
@@ -30,6 +30,13 @@ To simulate a collaborative AI system where tasks are routed and processed by di
 
 ### 5. **Graph Execution**
 - A state machine (`StateGraph`) handles transitions between agents.
-- Edges define how output from one agent determines the next step.
-- The system visualizes this graph and executes until the goal is achieved.
+- Edges define how the output from one agent determines the next step.
+- The system visualizes and executes this graph until the goal is achieved.
+
+# 🧠 LangGraph: Human-in-the-Loop Agent with Tool Usage
+This project demonstrates how to build a LangGraph-based AI system that integrates:
+
+- An AI assistant node (LLM)
+- A tool node
+- Human-in-the-loop decision-making (routing between agent/tool/end)
 
